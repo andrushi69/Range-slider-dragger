@@ -1,0 +1,62 @@
+.container {
+  margin-top: 60px;
+  position: relative;
+}
+
+.bar {
+  width: 450px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.toggle, .toggle_active {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  top: -11px;
+  cursor: pointer;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.completedBarLength {
+  width: 50px;
+  position: absolute;
+  background-color: blue;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.toggle_active {
+  border: 3px solid blue;
+  width: 45px;
+  height: 45px;
+  color: blue;
+  top: -15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (max-width: 670px) {
+  .bar {
+    width: 300px;
+    height: 30px;
+  }
+  .toggle {
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+  }
+  .toggle_active {
+    font-size: 23px;
+    width: 60px;
+    height: 60px;
+  }
+}
